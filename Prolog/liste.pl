@@ -100,7 +100,11 @@ substitute(X, Y, [A | Xs], [A | Ys]) :-
 
 % permutation/2 permutation(X, Y).
 % True when the second argument (a list) is a permutation of the first.
- 
+permutation([], []).
+permutation(X, Y) :-
+    quicksort(X, A),
+    quicksort(Y, B),
+    A = B.
 % partition/4
 % True when the first argument (a list of numbers) is split in two with
 % respect to the second argument N (a number); the third element will
