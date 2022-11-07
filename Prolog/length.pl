@@ -1,3 +1,5 @@
+%%% Restituisce lunghezza lista
+
 lengthL(0, []).
 lengthL(N, [_ | Xs]) :-
     lengthL(N1, Xs),

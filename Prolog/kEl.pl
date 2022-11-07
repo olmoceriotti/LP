@@ -1,3 +1,5 @@
+%%% Restituisce k-esimo elemento
+
 kEl([X|_Xs], K, X) :-
     K is 0.
 kEl([_|Xs],K, E) :-

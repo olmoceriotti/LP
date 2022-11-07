@@ -1,3 +1,5 @@
+%%% Rimuove elemento alla N posizione
+
 del([], _, []).
 del([_| Xs], N, Ys) :-
     N is 0,

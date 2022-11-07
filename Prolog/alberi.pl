@@ -17,7 +17,7 @@
 %%%   void
 %%Radice
 %%%   node(void, Left, Right).
-%%Nodo generico
+Nodo generico
 %%    node(Key, Value, NLeft, NRight).
 
 

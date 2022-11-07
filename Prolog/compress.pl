@@ -1,8 +1,10 @@
-%%% Elimina elementi uguali
+%%% Rimuove duplicati vicini in una lista
 compress([], []).
-compress([X | Xs], Ys) :-
-    member(X, Xs),
-    compress(Xs, Ys),
+compress([X], [X]).
+compress([X, X | Xs], Ys) :-
+    compress([X | Xs], Ys),
     !.
-compress([X | Xs], [X | Ys]) :-
-    compress(Xs, Ys).
+compress([X, Z | Xs], [X | Ys]) :-
+    X \= Z,
+    compress([Z | Xs], Ys),
+    !.

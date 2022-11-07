@@ -1,3 +1,5 @@
+%%% Calcola fattoriale
+
 fattoriale(0, 1).
 fattoriale(X, Y) :-
     X > 0,
