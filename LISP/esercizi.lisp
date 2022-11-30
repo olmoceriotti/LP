@@ -72,7 +72,7 @@
 
 (defun app (function L k)
   (cond ((> k (lung L)) 1)
-	(T (apply function (list L)))))
+	(T (funcall function L))))
 
 ; applica una funzione alla lista inversa
 ;;  applica_inv
@@ -80,7 +80,7 @@
 ; (A)
 
 (defun app_inv (function L)
-  (apply function (list (inverso  L))))
+  (funcall function (inverso  L)))
 
 
 
